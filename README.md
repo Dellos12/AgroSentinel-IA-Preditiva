@@ -24,3 +24,10 @@ Sistema de telemetria avançada para maquinário agrícola focado em diferenciar
 
 ## 📊 Prova dos Nove
 O sistema valida a eficácia de cada intervenção eletrônica. Se a temperatura não cai após o Flashing, o AgroSentinel eleva o status para **Falha Mecânica de Campo**, gerando automaticamente uma Ordem de Serviço.
+
+## 🔐 Auditoria de Integridade
+Cada ciclo de **Software Flashing** realizado por este sistema gera um log de auditoria criptográfico. 
+- **Algoritmo:** SH6 (SHA-256)
+- **Última Validação de Sistema:** `3654d4cb704d022da6380f0f76cee550c2ce3678d2e20e05e2cb28c0ec54216b`
+- **Norma de Referência:** [ISO 15143-3 / AEMP 2.0](https://www.iso.org)
+
