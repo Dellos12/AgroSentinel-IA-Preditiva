@@ -1,0 +1,32 @@
+{
+  "versao_norma": "AEMP 2.0 / ISO 15143-3",
+  "diretrizes_tecnicas": [
+    {
+      "id": "ERR_101_THERMAL_DISSIPATION",
+      "condicao": "Temperatura > 105C com Carga > 80%",
+      "diagnostico": "A força mecânica está sofrendo cisalhamento hidráulico ou atrito excessivo nos bicos injetores.",
+      "prescricao": "Aplicar Software Flashing para recalibrar o mapa de torque e reduzir o PWM em 15-20%.",
+      "prioridade": "CRITICA"
+    },
+    {
+      "id": "ERR_102_MECHANICAL_EFFICIENCY",
+      "condicao": "Eficiencia < 0.75",
+      "diagnostico": "Perda de torque nominal. Energia cinética sendo convertida em energia térmica (calor) prematuramente.",
+      "prescricao": "Ajuste eletrônico de sincronia de injeção via atualização de firmware OTA.",
+      "prioridade": "ALTA"
+    },
+    {
+      "id": "SAFE_103_SHA256_PROTOCOL",
+      "condicao": "Qualquer intervenção remota",
+      "diagnostico": "Protocolo de integridade exigido pela norma de segurança cibernética Agro 4.0.",
+      "prescricao": "Gerar Checksum SHA-256 e validar na ECU antes da gravação na EEPROM.",
+      "prioridade": "OBRIGATORIA"
+    }
+  ],
+  "metadados_maquina": {
+    "fabricante": "Global Agro Systems",
+    "protocolo": "CAN-Bus J1939",
+    "unidade_medida": "SI"
+  }
+}
+

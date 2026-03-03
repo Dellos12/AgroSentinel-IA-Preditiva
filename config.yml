@@ -1,0 +1,8 @@
+
+telemetry:
+  api_url: "https://api.agro-telemetry.com"
+  polling_rate: 5 # segundos
+
+thresholds:
+  heat_critical: 0.85 # Limiar de similaridade de cosseno
+  pwm_default: 75

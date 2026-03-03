@@ -1,0 +1,16 @@
+# --- Core Data & Performance (CPU Optimized) ---
+numpy>=1.24.0
+pandas>=2.0.0
+h5py>=3.8.0
+hdf5plugin>=4.1.1
+pyyaml>=6.0
+
+# --- AI & Vector Math (CPU Only) ---
+--find-links https://download.pytorch.org
+torch
+scikit-learn
+sentence-transformers
+
+# --- Connectivity & Logs ---
+requests>=2.28.0
+tqdm>=4.65.0
